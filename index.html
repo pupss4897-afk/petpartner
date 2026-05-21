@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#241c1a">
+    <title>雲牧創富學院 · 把喜歡的生活,經營成收入</title>
+    <meta name="description" content="不是每個人都要當網紅,但每個人都該擁有變現能力。團 GO 帶貨局 — 0 成本孵化能靠自己創造收入的人。">
+    <meta property="og:title" content="雲牧創富學院 · 團 GO 帶貨局">
+    <meta property="og:description" content="把喜歡的生活,經營成收入。我們不是在培養團購主,而是在培養能靠自己創造收入的人。">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#f7f2ea',
+                        ivory: '#fdfaf4',
+                        ink: '#2a2320',
+                        espresso: '#241c1a',
+                        mocha: '#6b5544',
+                        gold: '#b89766',
+                        goldlt: '#cdb088',
+                        wine: '#6b3d4d',
+                        stone: '#8a7f72'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['"Noto Sans TC"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Noto Sans TC', sans-serif; background: #f7f2ea; color: #2a2320; }
+        h1, h2, h3, .serif { font-family: 'Noto Serif TC', serif; }
+        .text-gold-gradient {
+            background: linear-gradient(120deg, #b89766, #cdb088, #b89766);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-line { width: 56px; height: 2px; background: linear-gradient(90deg, #b89766, #cdb088); }
+        .fade-up { opacity: 0; transform: translateY(24px); transition: all 0.7s cubic-bezier(.2,.7,.3,1); }
+        .fade-up.in { opacity: 1; transform: translateY(0); }
+        @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+        .floaty { animation: floaty 5s ease-in-out infinite; }
+        .card-hover { transition: all .35s ease; }
+        .card-hover:hover { transform: translateY(-6px); box-shadow: 0 18px 50px rgba(42,35,32,.12); }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- Nav -->
+    <nav class="fixed top-0 w-full z-50 bg-cream/85 backdrop-blur-md border-b border-ink/5">
+        <div class="container mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
+            <div class="serif text-lg md:text-xl font-bold tracking-widest text-ink">雲牧<span class="text-gold">創富學院</span></div>
+            <a href="#apply" class="bg-ink text-cream text-sm font-bold px-5 py-2.5 rounded-full hover:bg-espresso transition tracking-wider">申請加入</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="relative pt-32 pb-24 md:pt-44 md:pb-32 px-6 overflow-hidden">
+        <!-- 背景裝飾 -->
+        <div class="absolute top-20 -right-32 w-[500px] h-[500px] rounded-full opacity-[0.07]" style="background: radial-gradient(circle, #b89766, transparent 70%);"></div>
+        <div class="absolute -bottom-20 -left-32 w-[400px] h-[400px] rounded-full opacity-[0.06]" style="background: radial-gradient(circle, #6b3d4d, transparent 70%);"></div>
+
+        <div class="container mx-auto max-w-4xl relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 text-xs md:text-sm tracking-[0.35em] text-mocha font-medium mb-8 fade-up">
+                <span class="gold-line"></span>
+                <span>雲牧創富學院 · 團 GO 帶貨局</span>
+                <span class="gold-line"></span>
+            </div>
+
+            <h1 class="serif text-4xl md:text-6xl lg:text-7xl font-black leading-[1.25] text-ink mb-8 fade-up" style="transition-delay:.1s;">
+                把喜歡的生活<br>
+                <span class="text-gold-gradient">經營成收入</span>
+            </h1>
+
+            <p class="text-base md:text-xl text-mocha font-light leading-relaxed max-w-2xl mx-auto mb-4 fade-up" style="transition-delay:.2s;">
+                不是每個人都要當網紅 ~
+            </p>
+            <p class="text-lg md:text-2xl text-ink font-medium leading-relaxed max-w-2xl mx-auto mb-12 fade-up" style="transition-delay:.3s;">
+                但每個人 都該擁有<span class="text-gold font-bold">變現能力</span>。
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center fade-up" style="transition-delay:.4s;">
+                <a href="#apply" class="bg-ink text-cream font-bold px-10 py-4 rounded-full hover:bg-espresso transition shadow-lg hover:shadow-xl tracking-wider text-base md:text-lg">
+                    開始我的變現之路 →
+                </a>
+                <a href="#about" class="text-ink font-medium px-8 py-4 border border-ink/20 rounded-full hover:border-gold hover:text-gold transition tracking-wider">
+                    先了解我們
+                </a>
+            </div>
+
+            <!-- 數據 -->
+            <div class="grid grid-cols-3 gap-4 md:gap-12 mt-20 max-w-2xl mx-auto fade-up" style="transition-delay:.5s;">
+                <div class="text-center">
+                    <div class="serif text-3xl md:text-5xl font-black text-ink">0</div>
+                    <div class="text-xs md:text-sm text-stone tracking-widest mt-1">成本啟動</div>
+                </div>
+                <div class="text-center border-x border-ink/10">
+                    <div class="serif text-3xl md:text-5xl font-black text-ink">300<span class="text-xl">+</span></div>
+                    <div class="text-xs md:text-sm text-stone tracking-widest mt-1">已培育創作者</div>
+                </div>
+                <div class="text-center">
+                    <div class="serif text-3xl md:text-5xl font-black text-ink">60<span class="text-xl">萬</span></div>
+                    <div class="text-xs md:text-sm text-stone tracking-widest mt-1">主理人粉絲</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 理念 Manifesto -->
+    <section id="about" class="py-24 md:py-32 px-6 bg-espresso text-cream relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-[0.08]" style="background: radial-gradient(circle, #b89766, transparent 70%);"></div>
+        <div class="container mx-auto max-w-3xl relative z-10 text-center">
+            <div class="gold-line mx-auto mb-8"></div>
+            <p class="text-xs tracking-[0.4em] text-goldlt mb-8 fade-up">OUR PHILOSOPHY · 我們的理念</p>
+            <h2 class="serif text-2xl md:text-4xl font-bold leading-relaxed mb-10 fade-up" style="transition-delay:.1s;">
+                我們不是在培養<span class="text-stone line-through decoration-gold/60 decoration-2">團購主</span><br>
+                而是在培養<br>
+                <span class="text-gold-gradient">能靠自己創造收入的人</span>
+            </h2>
+            <p class="text-base md:text-lg text-cream/70 font-light leading-loose max-w-2xl mx-auto fade-up" style="transition-delay:.2s;">
+                你不需要先有龐大的粉絲 ~<br>
+                也不需要會跳舞、會演戲 ~<br>
+                你只需要願意開始。<br><br>
+                我們提供完整系統,<br>
+                讓你把<span class="text-goldlt">喜歡的生活</span> ~ 一步步經營成<span class="text-goldlt">穩定收入</span>。
+            </p>
+        </div>
+    </section>
+
+    <!-- 5 大成果 -->
+    <section class="py-24 md:py-28 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16 fade-up">
+                <p class="text-xs tracking-[0.4em] text-gold mb-4">WHAT YOU GET</p>
+                <h2 class="serif text-3xl md:text-5xl font-black text-ink">加入後 · 你會擁有的 5 件事</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card-hover bg-ivory border border-ink/8 rounded-3xl p-8 fade-up">
+                    <div class="w-14 h-14 rounded-2xl bg-ink flex items-center justify-center text-gold text-2xl mb-5"><i class="fas fa-rocket"></i></div>
+                    <h3 class="serif text-xl font-bold text-ink mb-2">0 成本啟動的副業</h3>
+                    <p class="text-mocha text-sm leading-relaxed">不囤貨、不收會費 ~ 我們提供賣場與素材,你只要開始。</p>
+                </div>
+                <div class="card-hover bg-ivory border border-ink/8 rounded-3xl p-8 fade-up" style="transition-delay:.08s;">
+                    <div class="w-14 h-14 rounded-2xl bg-ink flex items-center justify-center text-gold text-2xl mb-5"><i class="fas fa-sack-dollar"></i></div>
+                    <h3 class="serif text-xl font-bold text-ink mb-2">穩定的團購商品池</h3>
+                    <p class="text-mocha text-sm leading-relaxed">每月獎金 <span class="text-ink font-bold">5,000 ~ 1 萬起</span>,商品都經實測與熱銷驗證。</p>
+                </div>
+                <div class="card-hover bg-ivory border border-ink/8 rounded-3xl p-8 fade-up" style="transition-delay:.16s;">
+                    <div class="w-14 h-14 rounded-2xl bg-ink flex items-center justify-center text-gold text-2xl mb-5"><i class="fas fa-box-open"></i></div>
+                    <h3 class="serif text-xl font-bold text-ink mb-2">現成賣場與素材</h3>
+                    <p class="text-mocha text-sm leading-relaxed">不用自己摸索 ~ 進來就能用全台最強商品資源庫。</p>
+                </div>
+                <div class="card-hover bg-ivory border border-ink/8 rounded-3xl p-8 fade-up" style="transition-delay:.24s;">
+                    <div class="w-14 h-14 rounded-2xl bg-ink flex items-center justify-center text-gold text-2xl mb-5"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="serif text-xl font-bold text-ink mb-2">自媒體經營能力</h3>
+                    <p class="text-mocha text-sm leading-relaxed">拍片、社群、流量變現 ~ 完整培訓帶你從 0 到會。</p>
+                </div>
+                <div class="card-hover bg-ivory border border-ink/8 rounded-3xl p-8 fade-up" style="transition-delay:.32s;">
+                    <div class="w-14 h-14 rounded-2xl bg-ink flex items-center justify-center text-gold text-2xl mb-5"><i class="fas fa-users"></i></div>
+                    <h3 class="serif text-xl font-bold text-ink mb-2">你自己的顧客群</h3>
+                    <p class="text-mocha text-sm leading-relaxed">協助你建立 <span class="text-ink font-bold">10–30 位</span>固定回購的鐵粉。</p>
+                </div>
+                <div class="card-hover rounded-3xl p-8 fade-up bg-espresso text-cream flex flex-col justify-center" style="transition-delay:.4s;">
+                    <div class="text-goldlt text-3xl serif font-black mb-3">+1</div>
+                    <h3 class="serif text-xl font-bold mb-2">專案經理全程陪跑</h3>
+                    <p class="text-cream/70 text-sm leading-relaxed">不是丟你自己飛 ~ 專人協助你一步步成長。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 大賽道 -->
+    <section class="py-24 md:py-28 px-6 bg-ivory">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16 fade-up">
+                <p class="text-xs tracking-[0.4em] text-gold mb-4">CHOOSE YOUR TRACK</p>
+                <h2 class="serif text-3xl md:text-5xl font-black text-ink mb-4">選擇你的變現賽道</h2>
+                <p class="text-mocha">用興趣換收入 ~ 用內容換影響力</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card-hover bg-cream rounded-3xl overflow-hidden border border-ink/8 fade-up">
+                    <div class="h-2 bg-gradient-to-r from-gold to-goldlt"></div>
+                    <div class="p-8">
+                        <div class="text-4xl mb-4">🐾</div>
+                        <h3 class="serif text-2xl font-bold text-ink mb-2">寵物賽道</h3>
+                        <div class="inline-block text-xs bg-gold/15 text-mocha px-3 py-1 rounded-full mb-4 tracking-wider">台灣成長最快</div>
+                        <p class="text-mocha text-sm leading-relaxed">主打毛孩市場 × 專業照護。我們最強的賽道,有完整寵物 IP 經驗背書。</p>
+                    </div>
+                </div>
+                <div class="card-hover bg-cream rounded-3xl overflow-hidden border border-ink/8 fade-up" style="transition-delay:.1s;">
+                    <div class="h-2 bg-gradient-to-r from-mocha to-gold"></div>
+                    <div class="p-8">
+                        <div class="text-4xl mb-4">🏡</div>
+                        <h3 class="serif text-2xl font-bold text-ink mb-2">生活賽道</h3>
+                        <div class="inline-block text-xs bg-gold/15 text-mocha px-3 py-1 rounded-full mb-4 tracking-wider">最容易入門</div>
+                        <p class="text-mocha text-sm leading-relaxed">主打居家好物 × 美食 × 生活選品。門檻最低,適合第一次嘗試的你。</p>
+                    </div>
+                </div>
+                <div class="card-hover bg-cream rounded-3xl overflow-hidden border border-ink/8 fade-up" style="transition-delay:.2s;">
+                    <div class="h-2 bg-gradient-to-r from-wine to-gold"></div>
+                    <div class="p-8">
+                        <div class="text-4xl mb-4">💄</div>
+                        <h3 class="serif text-2xl font-bold text-ink mb-2">女力賽道</h3>
+                        <div class="inline-block text-xs bg-gold/15 text-mocha px-3 py-1 rounded-full mb-4 tracking-wider">女性消費力第二名</div>
+                        <p class="text-mocha text-sm leading-relaxed">主打愛美 × 療癒舒壓 × 體態保養。把懂生活的妳,變成有影響力的妳。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 真實成績 -->
+    <section class="py-24 md:py-28 px-6 bg-espresso text-cream relative overflow-hidden">
+        <div class="container mx-auto max-w-5xl relative z-10">
+            <div class="text-center mb-14 fade-up">
+                <p class="text-xs tracking-[0.4em] text-goldlt mb-4">REAL RESULTS</p>
+                <h2 class="serif text-3xl md:text-5xl font-black mb-3">香菇頻道 · 6 個月實戰成績</h2>
+                <p class="text-cream/60 max-w-2xl mx-auto">沒有靠爆紅,也沒砸廣告 ~ 用我們現在教新人的同一套方法,一步步做起來。</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 fade-up" style="transition-delay:.1s;">
+                <div class="text-center bg-cream/5 border border-goldlt/20 rounded-2xl p-6">
+                    <div class="serif text-3xl md:text-5xl font-black text-gold-gradient">250<span class="text-lg">+</span></div>
+                    <div class="text-xs md:text-sm text-cream/60 mt-2 tracking-wider">實際購買者</div>
+                </div>
+                <div class="text-center bg-cream/5 border border-goldlt/20 rounded-2xl p-6">
+                    <div class="serif text-3xl md:text-5xl font-black text-gold-gradient">1000<span class="text-lg">瓶</span></div>
+                    <div class="text-xs md:text-sm text-cream/60 mt-2 tracking-wider">毛孩保健品開團</div>
+                </div>
+                <div class="text-center bg-cream/5 border border-goldlt/20 rounded-2xl p-6">
+                    <div class="serif text-3xl md:text-5xl font-black text-gold-gradient">百萬</div>
+                    <div class="text-xs md:text-sm text-cream/60 mt-2 tracking-wider">單檔營業額</div>
+                </div>
+                <div class="text-center bg-cream/5 border border-goldlt/20 rounded-2xl p-6">
+                    <div class="serif text-3xl md:text-5xl font-black text-gold-gradient">30<span class="text-lg">%+</span></div>
+                    <div class="text-xs md:text-sm text-cream/60 mt-2 tracking-wider">獲利 · 持續回購</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 創辦人 -->
+    <section class="py-24 md:py-28 px-6">
+        <div class="container mx-auto max-w-5xl">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-10 items-center">
+                <div class="md:col-span-2 text-center fade-up">
+                    <div class="relative inline-block">
+                        <div class="absolute -inset-3 bg-gradient-to-br from-gold to-goldlt rounded-full opacity-20 blur-xl"></div>
+                        <div class="relative w-44 h-44 mx-auto rounded-full bg-gradient-to-br from-mocha to-espresso flex items-center justify-center text-cream serif text-5xl font-black">綸</div>
+                    </div>
+                    <h3 class="serif text-2xl font-bold text-ink mt-6">綸綸老師</h3>
+                    <p class="text-stone text-sm mt-1">商業 IP 策略師 · 香菇爸</p>
+                </div>
+                <div class="md:col-span-3 fade-up" style="transition-delay:.1s;">
+                    <p class="text-xs tracking-[0.4em] text-gold mb-4">FOUNDER</p>
+                    <h2 class="serif text-2xl md:text-3xl font-bold text-ink mb-6 leading-relaxed">10 年實戰 ~<br>陪 300+ 創作者把流量變成收入</h2>
+                    <div class="grid grid-cols-2 gap-x-6 gap-y-3 text-sm">
+                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">TikTok 官方鑽石級紅人</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">全網粉絲超過 60 萬</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">全平台觀看破 5 億次</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">台灣十大短影音創作者 三連霸</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">特定寵物業專任人員</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">開團經驗超過 10 年</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作流程 -->
+    <section class="py-24 md:py-28 px-6 bg-ivory">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-16 fade-up">
+                <p class="text-xs tracking-[0.4em] text-gold mb-4">HOW IT WORKS · 第一 ~ 第四週</p>
+                <h2 class="serif text-3xl md:text-5xl font-black text-ink">從這裡 · 開始你的收入</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="flex gap-6 items-start fade-up">
+                    <div class="flex-shrink-0 w-14 h-14 rounded-full bg-ink text-gold serif font-black text-xl flex items-center justify-center">01</div>
+                    <div class="bg-cream border border-ink/8 rounded-2xl p-6 flex-1">
+                        <h3 class="serif text-xl font-bold text-ink mb-2">合作啟動 × 第一次開團</h3>
+                        <p class="text-mocha text-sm leading-relaxed">教你第一場開團怎麼做 ~ 完整流程、素材、對話、發文,手把手帶。</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start fade-up" style="transition-delay:.1s;">
+                    <div class="flex-shrink-0 w-14 h-14 rounded-full bg-ink text-gold serif font-black text-xl flex items-center justify-center">02</div>
+                    <div class="bg-cream border border-ink/8 rounded-2xl p-6 flex-1">
+                        <h3 class="serif text-xl font-bold text-ink mb-2">顧客群 × 穩定月收入</h3>
+                        <p class="text-mocha text-sm leading-relaxed">開始賺第一筆收入 ~ 協助你建立 10–30 位固定回購鐵粉,變現可持續。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 我們不... -->
+            <div class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4 fade-up">
+                <div class="text-center bg-cream border border-ink/8 rounded-2xl py-6 px-4">
+                    <div class="text-gold text-2xl mb-2"><i class="fas fa-circle-xmark"></i></div>
+                    <div class="font-bold text-ink">不看粉絲數</div>
+                </div>
+                <div class="text-center bg-cream border border-ink/8 rounded-2xl py-6 px-4">
+                    <div class="text-gold text-2xl mb-2"><i class="fas fa-circle-xmark"></i></div>
+                    <div class="font-bold text-ink">不收會費</div>
+                </div>
+                <div class="text-center bg-cream border border-ink/8 rounded-2xl py-6 px-4">
+                    <div class="text-gold text-2xl mb-2"><i class="fas fa-circle-xmark"></i></div>
+                    <div class="font-bold text-ink">不囤貨</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="apply" class="py-24 md:py-32 px-6 bg-espresso text-cream relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full opacity-[0.1]" style="background: radial-gradient(circle, #b89766, transparent 65%);"></div>
+        <div class="container mx-auto max-w-3xl relative z-10 text-center">
+            <div class="gold-line mx-auto mb-8"></div>
+            <h2 class="serif text-3xl md:text-5xl font-black leading-snug mb-6 fade-up">
+                你值得擁有<br>
+                <span class="text-gold-gradient">靠自己創造收入的能力</span>
+            </h2>
+            <p class="text-cream/70 text-base md:text-lg font-light leading-loose mb-12 max-w-xl mx-auto fade-up" style="transition-delay:.1s;">
+                如果你願意開始 ~<br>
+                我們會陪你把喜歡的生活 ~ 經營成收入。
+            </p>
+            <a href="https://lin.ee/y8X3St7" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-gold text-espresso font-black px-12 py-4 rounded-full hover:bg-goldlt transition shadow-2xl text-base md:text-lg tracking-wider fade-up" style="transition-delay:.2s;">
+                <i class="fab fa-line text-xl"></i>
+                立即申請加入
+            </a>
+            <p class="text-cream/40 text-xs mt-6 tracking-wider fade-up" style="transition-delay:.3s;">⭐ 2026 重點市場:寵物 × 生活 × 美業</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 px-6 bg-espresso border-t border-cream/10 text-center">
+        <div class="serif text-lg font-bold tracking-widest text-cream mb-2">雲牧<span class="text-gold">創富學院</span></div>
+        <p class="text-cream/40 text-xs tracking-wider">團 GO 帶貨局 · 把喜歡的生活,經營成收入</p>
+        <p class="text-cream/25 text-xs mt-2">&copy; 2026 雲牧創富學院 · All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // 滾動淡入動畫
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+    </script>
+</body>
+</html>
