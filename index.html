@@ -111,22 +111,49 @@
 
         <div class="container mx-auto max-w-4xl relative z-10">
 
-            <!-- 🚨 2026 新聞警示卡（恐懼錨點）-->
-            <div class="max-w-3xl mx-auto mb-10 fade-up">
-                <div class="bg-gradient-to-br from-[#3d1f1f] to-[#2a1414] text-cream rounded-2xl p-6 md:p-8 border-l-4 border-[#c44a3a] shadow-2xl relative overflow-hidden">
-                    <div class="absolute top-3 right-4 text-[10px] tracking-[0.3em] text-[#c44a3a] font-bold opacity-80">2026 · 警示</div>
-                    <div class="flex items-start gap-3 mb-4">
-                        <span class="text-2xl md:text-3xl shrink-0">🚨</span>
-                        <p class="serif text-base md:text-xl font-bold leading-snug">
-                            「AI 衝擊下，第一個失業的<br class="hidden md:inline">不是藍領，<span class="text-[#e8b878]">是名校畢業的白領</span>。」
+            <!-- 🚨 2026 新聞警示卡（恐懼錨點 · 放大版）-->
+            <div class="max-w-5xl mx-auto mb-12 md:mb-16 fade-up">
+                <div class="bg-gradient-to-br from-[#3d1f1f] via-[#2a1414] to-[#1a0a0a] text-cream rounded-3xl p-8 md:p-14 border-l-[6px] md:border-l-8 border-[#c44a3a] shadow-[0_25px_60px_rgba(196,74,58,0.35)] relative overflow-hidden">
+                    <!-- 背景裝飾光暈 -->
+                    <div class="absolute -top-20 -right-20 w-72 h-72 rounded-full opacity-20" style="background: radial-gradient(circle, #c44a3a, transparent 70%);"></div>
+                    <div class="absolute -bottom-20 -left-20 w-60 h-60 rounded-full opacity-15" style="background: radial-gradient(circle, #e8b878, transparent 70%);"></div>
+
+                    <!-- 標籤 -->
+                    <div class="flex items-center justify-between mb-6 relative z-10">
+                        <div class="inline-flex items-center gap-2 bg-[#c44a3a]/20 border border-[#c44a3a]/50 px-3 py-1 rounded-full">
+                            <span class="w-1.5 h-1.5 bg-[#c44a3a] rounded-full animate-pulse"></span>
+                            <span class="text-[10px] md:text-xs tracking-[0.3em] text-[#e8b878] font-bold">2026 · 重大警示</span>
+                        </div>
+                        <span class="text-[10px] md:text-xs text-cream/40">天下雜誌・DEI 國際論壇</span>
+                    </div>
+
+                    <!-- 主引言 -->
+                    <div class="flex items-start gap-4 md:gap-6 mb-8 relative z-10">
+                        <span class="text-5xl md:text-7xl shrink-0 leading-none">🚨</span>
+                        <p class="serif text-2xl md:text-4xl lg:text-5xl font-black leading-[1.25]">
+                            「AI 衝擊下<br>
+                            第一個失業的，<br>
+                            <span class="text-[#e8b878]">是名校畢業的白領。」</span>
                         </p>
                     </div>
-                    <div class="pl-9 text-xs md:text-sm text-cream/80 leading-relaxed mb-3">
-                        企業「不聘新鮮人」浪潮，將從美國席捲台灣<br>
-                        新鮮人只剩 <span class="text-[#e8b878] font-bold">2 個月適應期</span>，學不完別人 2 年的知識，就被汰換。
-                    </div>
-                    <div class="pl-9 text-[11px] md:text-xs text-cream/55 italic border-l border-[#c44a3a]/40 pl-3 ml-9">
-                        — 簡立峰｜前 Google 台灣董事總經理｜2026 天下 SDGs × DEI 國際論壇
+
+                    <!-- 補充說明 -->
+                    <div class="pl-0 md:pl-[88px] space-y-4 relative z-10">
+                        <p class="text-base md:text-xl text-cream/90 leading-relaxed font-medium">
+                            企業「<span class="text-[#e8b878] font-bold">不聘新鮮人</span>」浪潮，將從美國席捲台灣
+                        </p>
+                        <p class="text-base md:text-xl text-cream/90 leading-relaxed font-medium">
+                            新鮮人只剩 <span class="text-[#e8b878] font-black text-2xl md:text-3xl">2 個月</span> 適應期<br class="md:hidden">
+                            學不完別人 2 年的知識，<span class="text-[#c44a3a] font-bold">就被汰換</span>。
+                        </p>
+
+                        <!-- 來源（更顯眼）-->
+                        <div class="mt-8 pt-6 border-t border-[#c44a3a]/30">
+                            <div class="text-xs md:text-sm text-cream/60 italic leading-relaxed">
+                                <span class="text-[#e8b878] font-bold not-italic">— 簡立峰</span>｜前 Google 台灣董事總經理<br>
+                                <span class="text-cream/40">2026 天下 SDGs × DEI 國際論壇</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
