@@ -54,6 +54,43 @@
         .floaty { animation: floaty 5s ease-in-out infinite; }
         .card-hover { transition: all .35s ease; }
         .card-hover:hover { transform: translateY(-6px); box-shadow: 0 18px 50px rgba(42,35,32,.12); }
+
+        /* 學員心得 跑馬燈 */
+        @keyframes marquee-left {
+            from { transform: translateX(0); }
+            to   { transform: translateX(-50%); }
+        }
+        .marquee-track {
+            display: flex;
+            gap: 1.5rem;
+            width: max-content;
+            animation: marquee-left 60s linear infinite;
+        }
+        .marquee-container:hover .marquee-track {
+            animation-play-state: paused;
+        }
+        .marquee-card {
+            flex: 0 0 auto;
+            width: 280px;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 6px 24px rgba(42, 35, 32, 0.08);
+            background: #fffaf0;
+            transition: transform 0.35s ease;
+        }
+        .marquee-card:hover {
+            transform: scale(1.04) translateY(-4px);
+            box-shadow: 0 12px 36px rgba(42, 35, 32, 0.18);
+        }
+        .marquee-card img { display: block; width: 100%; height: auto; }
+        @media (max-width: 640px) {
+            .marquee-card { width: 220px; }
+        }
+        /* 漸層邊緣（淡出兩側讓視覺更柔）*/
+        .marquee-fade {
+            mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+        }
     </style>
 </head>
 <body class="antialiased overflow-x-hidden">
@@ -406,6 +443,36 @@
                     <div class="text-xs text-stone tracking-wider mb-2">粉絲</div>
                     <p class="text-mocha text-xs leading-relaxed">貓咪健康偵探 · 萌寵賽道</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 學員心得實照（橫向跑馬燈）-->
+    <section class="py-20 md:py-24 overflow-hidden">
+        <div class="container mx-auto max-w-6xl px-6 mb-12">
+            <div class="text-center fade-up">
+                <p class="text-xs tracking-[0.4em] text-gold mb-4">REAL WORDS · 學員親手寫</p>
+                <h2 class="serif text-3xl md:text-5xl font-black text-ink mb-4">他們說 · 加入後改變了什麼</h2>
+                <p class="text-mocha">真實心得實照 · 滑鼠停在上面會暫停讓你慢慢看</p>
+            </div>
+        </div>
+
+        <!-- 第一條跑馬燈（左→右）-->
+        <div class="marquee-container marquee-fade">
+            <div class="marquee-track">
+                <a class="marquee-card" href="#"><img src="images/testimonial_1.png" alt="學員心得 1" loading="lazy"></a>
+                <a class="marquee-card" href="#"><img src="images/testimonial_2.png" alt="學員心得 2" loading="lazy"></a>
+                <a class="marquee-card" href="#"><img src="images/testimonial_3.png" alt="學員心得 3" loading="lazy"></a>
+                <a class="marquee-card" href="#"><img src="images/testimonial_4.png" alt="學員心得 4" loading="lazy"></a>
+                <a class="marquee-card" href="#"><img src="images/testimonial_5.png" alt="學員心得 5" loading="lazy"></a>
+                <a class="marquee-card" href="#"><img src="images/testimonial_6.png" alt="學員心得 6" loading="lazy"></a>
+                <!-- 複製一輪做無限滾動 -->
+                <a class="marquee-card" href="#"><img src="images/testimonial_1.png" alt="學員心得 1" loading="lazy"></a>
+                <a class="marquee-card" href="#"><img src="images/testimonial_2.png" alt="學員心得 2" loading="lazy"></a>
+                <a class="marquee-card" href="#"><img src="images/testimonial_3.png" alt="學員心得 3" loading="lazy"></a>
+                <a class="marquee-card" href="#"><img src="images/testimonial_4.png" alt="學員心得 4" loading="lazy"></a>
+                <a class="marquee-card" href="#"><img src="images/testimonial_5.png" alt="學員心得 5" loading="lazy"></a>
+                <a class="marquee-card" href="#"><img src="images/testimonial_6.png" alt="學員心得 6" loading="lazy"></a>
             </div>
         </div>
     </section>
