@@ -83,6 +83,19 @@
             box-shadow: 0 12px 36px rgba(42, 35, 32, 0.18);
         }
         .marquee-card img { display: block; width: 100%; height: auto; }
+
+        /* 學員頻道實照 */
+        .shot {
+            background: #121212;
+            border-radius: 14px;
+            overflow: hidden;
+            height: 118px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+        }
+        .shot img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
         @media (max-width: 640px) {
             .marquee-card { width: 220px; }
         }
@@ -291,6 +304,77 @@
         </div>
     </section>
 
+    <!-- 市場對比 -->
+    <section class="py-24 md:py-28 px-6 bg-espresso text-cream relative overflow-hidden">
+        <div class="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full opacity-[0.12]" style="background: radial-gradient(circle, #b89766, transparent 70%);"></div>
+        <div class="container mx-auto max-w-5xl relative z-10">
+            <div class="text-center mb-14 fade-up">
+                <p class="text-xs tracking-[0.4em] text-goldlt mb-4">THE DIFFERENCE</p>
+                <h2 class="serif text-3xl md:text-5xl font-black">為什麼是我們</h2>
+                <p class="text-sm md:text-base text-cream/60 mt-5 max-w-xl mx-auto">
+                    同樣是幫毛孩接合作 ~ <br class="md:hidden">
+                    差別在<span class="text-goldlt font-bold">有沒有人替牠把關</span>
+                </p>
+            </div>
+
+            <div class="overflow-x-auto fade-up">
+                <table class="w-full min-w-[640px] border-collapse text-sm md:text-base">
+                    <thead>
+                        <tr>
+                            <th class="text-left font-medium text-cream/40 text-xs tracking-widest py-4 px-4 w-[30%]">比較項目</th>
+                            <th class="text-left font-bold text-cream/50 py-4 px-4 w-[35%] border-b border-cream/10">市面上常見的做法</th>
+                            <th class="text-left py-4 px-5 w-[35%] bg-goldlt/10 rounded-t-2xl border-b border-goldlt/40">
+                                <span class="serif font-black text-goldlt text-base md:text-lg">PetPartner 毛孩罐罐局</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-top">
+                        <tr>
+                            <td class="py-5 px-4 text-cream/70 font-medium border-t border-cream/10">商品怎麼來</td>
+                            <td class="py-5 px-4 text-cream/45 border-t border-cream/10"><i class="fas fa-xmark text-[#c4756a] mr-2"></i>誰找上門就接　沒人查過</td>
+                            <td class="py-5 px-5 bg-goldlt/10 border-t border-goldlt/20"><i class="fas fa-check text-goldlt mr-2"></i>自己實測過　不敢餵自己孩子的不進來</td>
+                        </tr>
+                        <tr>
+                            <td class="py-5 px-4 text-cream/70 font-medium border-t border-cream/10">合作型態</td>
+                            <td class="py-5 px-4 text-cream/45 border-t border-cream/10"><i class="fas fa-xmark text-[#c4756a] mr-2"></i>單次業配　互惠換品　做完就沒了</td>
+                            <td class="py-5 px-5 bg-goldlt/10 border-t border-goldlt/20"><i class="fas fa-check text-goldlt mr-2"></i>長期經營　一場團可以一直開下去</td>
+                        </tr>
+                        <tr>
+                            <td class="py-5 px-4 text-cream/70 font-medium border-t border-cream/10">收入怎麼算</td>
+                            <td class="py-5 px-4 text-cream/45 border-t border-cream/10"><i class="fas fa-xmark text-[#c4756a] mr-2"></i>看對方心情　常常只有換到商品</td>
+                            <td class="py-5 px-5 bg-goldlt/10 border-t border-goldlt/20"><i class="fas fa-check text-goldlt mr-2"></i>公開分潤　做多少拿多少　可以累積</td>
+                        </tr>
+                        <tr>
+                            <td class="py-5 px-4 text-cream/70 font-medium border-t border-cream/10">要有多少粉絲</td>
+                            <td class="py-5 px-4 text-cream/45 border-t border-cream/10"><i class="fas fa-xmark text-[#c4756a] mr-2"></i>粉絲不夠　根本沒人理你</td>
+                            <td class="py-5 px-5 bg-goldlt/10 border-t border-goldlt/20"><i class="fas fa-check text-goldlt mr-2"></i>不看粉絲數</td>
+                        </tr>
+                        <tr>
+                            <td class="py-5 px-4 text-cream/70 font-medium border-t border-cream/10">有沒有人教</td>
+                            <td class="py-5 px-4 text-cream/45 border-t border-cream/10"><i class="fas fa-xmark text-[#c4756a] mr-2"></i>自己摸索　拍壞了也沒人講</td>
+                            <td class="py-5 px-5 bg-goldlt/10 border-t border-goldlt/20"><i class="fas fa-check text-goldlt mr-2"></i>完整開團學習</td>
+                        </tr>
+                        <tr>
+                            <td class="py-5 px-4 text-cream/70 font-medium border-t border-cream/10">誰承擔風險</td>
+                            <td class="py-5 px-4 text-cream/45 border-t border-cream/10"><i class="fas fa-xmark text-[#c4756a] mr-2"></i>出事了　是你家孩子在承擔</td>
+                            <td class="py-5 px-5 bg-goldlt/10 border-t border-goldlt/20"><i class="fas fa-check text-goldlt mr-2"></i>我們先把關　再談合作</td>
+                        </tr>
+                        <tr>
+                            <td class="py-5 px-4 text-cream/70 font-medium border-t border-cream/10">誰都能進嗎</td>
+                            <td class="py-5 px-4 text-cream/45 border-t border-cream/10"><i class="fas fa-xmark text-[#c4756a] mr-2"></i>誰都能進　所以什麼人都有</td>
+                            <td class="py-5 px-5 bg-goldlt/10 rounded-b-2xl border-t border-goldlt/20"><i class="fas fa-check text-goldlt mr-2"></i>申請審核制　只留真的要做的人</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="text-center text-sm md:text-base text-cream/60 mt-12 fade-up leading-relaxed">
+                我們不是要把市場做大 ~ <br class="md:hidden">
+                是想讓這個市場　<span class="text-goldlt font-bold">不要再亂七八糟下去</span>
+            </p>
+        </div>
+    </section>
+
     <!-- 3 大賽道 -->
     <section class="py-24 md:py-28 px-6 bg-ivory">
         <div class="container mx-auto max-w-6xl">
@@ -385,7 +469,11 @@
         <div class="container mx-auto max-w-6xl">
             <div class="text-center mb-16 fade-up">
                 <p class="text-xs tracking-[0.4em] text-gold mb-4">CORE TEAM</p>
-                <h2 class="serif text-3xl md:text-5xl font-black text-ink">帶你的 · 是真正的實戰團隊</h2>
+                <h2 class="serif text-3xl md:text-5xl font-black text-ink">帶你的 · 是真正在把關的人</h2>
+                <p class="text-sm md:text-base text-mocha mt-5 max-w-2xl mx-auto leading-relaxed">
+                    我們做這件事　不是因為寵物市場好賺 ~ <br class="md:hidden">
+                    是因為看太多毛孩　<span class="text-ink font-bold">被拿去換一次免費的罐頭</span>
+                </p>
             </div>
 
             <!-- 創辦人 綸綸老師 -->
@@ -399,15 +487,21 @@
                 <div class="md:col-span-3 fade-up" style="transition-delay:.1s;">
                     <p class="text-xs tracking-[0.4em] text-gold mb-3">FOUNDER · 創辦人</p>
                     <h3 class="serif text-3xl font-black text-ink mb-1">綸綸老師</h3>
-                    <p class="text-stone text-sm mb-6">商業 IP 策略師 · 香菇爸</p>
-                    <h4 class="serif text-xl md:text-2xl font-bold text-ink mb-6 leading-relaxed">10 年實戰 ~ 陪 300+ 創作者<br>把流量變成收入</h4>
+                    <p class="text-stone text-sm mb-6">短影音創作者 · 毛孩品牌經營者 · 香菇爸</p>
+                    <h4 class="serif text-xl md:text-2xl font-bold text-ink mb-5 leading-relaxed">我不是來教你怎麼紅<br>是來確保你家孩子　不會被拿去試</h4>
+                    <p class="text-mocha text-sm md:text-base leading-relaxed mb-7">
+                        做了 10 年短影音　也自己養、自己開團 ~<br>
+                        正因為看過太多亂七八糟的合作　<br class="md:hidden">
+                        才更清楚哪些東西　不該讓孩子吃
+                    </p>
+                    <p class="text-xs text-stone mb-4 tracking-wide">這些不是頭銜　是我一路走過來的路</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">TikTok 官方鑽石級紅人</span></div>
-                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">全網粉絲超過 60 萬</span></div>
-                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">全平台觀看破 5 億次</span></div>
-                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">台灣十大短影音創作者 三連霸</span></div>
                         <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">特定寵物業專任人員</span></div>
                         <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">開團經驗超過 10 年</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">陪 300+ 創作者把流量變成收入</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">台灣十大短影音創作者 三連霸</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">TikTok 官方鑽石級紅人</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">全網粉絲 60 萬　觀看破 5 億次</span></div>
                     </div>
                 </div>
             </div>
@@ -421,49 +515,157 @@
                     </div>
                 </div>
                 <div class="md:col-span-3 md:order-1 fade-up" style="transition-delay:.1s;">
-                    <p class="text-xs tracking-[0.4em] text-gold mb-3">IP STRATEGIST · 策劃師</p>
+                    <p class="text-xs tracking-[0.4em] text-gold mb-3">CO-LEAD · 美業賽道主理人</p>
                     <h3 class="serif text-3xl font-black text-ink mb-1">Winnifer</h3>
-                    <p class="text-stone text-sm mb-6">商業 IP 策略師</p>
-                    <h4 class="serif text-xl md:text-2xl font-bold text-ink mb-6 leading-relaxed">把你的內容 ~<br>規劃成能長大的個人品牌</h4>
+                    <p class="text-stone text-sm mb-6">台灣知名美業頻道主理人 · 商業 IP 策略師</p>
+                    <h4 class="serif text-xl md:text-2xl font-bold text-ink mb-5 leading-relaxed">內容不是拍好看 ~<br>是拍到有人願意買單</h4>
+                    <p class="text-mocha text-sm md:text-base leading-relaxed mb-7">
+                        自己經營頻道　也自己開團 ~<br>
+                        我知道從沒人看　到有人下單<br class="md:hidden">
+                        中間差的是什麼
+                    </p>
+                    <p class="text-xs text-stone mb-4 tracking-wide">這些不是頭銜　是我一路走過來的路</p>
                     <div class="space-y-3 text-sm">
-                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">與 KOL／KOC 進行分享 & IP 培養規劃</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">台灣知名美業頻道主理人</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">帶 KOL／KOC 從 0 建立個人 IP</span></div>
                         <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">社群運營規劃及互動內容製作</span></div>
                         <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">專案活動設計與粉絲經營策略</span></div>
-                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">維護社群溫度及日常互動</span></div>
-                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">管理與培訓新人　激發社群成長潛力</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-diamond text-gold text-xs mt-1.5"></i><span class="text-mocha">新人管理與培訓　陪你走過第一場</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 學員心得實照（橫向跑馬燈）-->
-    <section class="py-20 md:py-24 overflow-hidden">
-        <div class="container mx-auto max-w-6xl px-6 mb-12">
-            <div class="text-center fade-up">
-                <p class="text-xs tracking-[0.4em] text-gold mb-4">REAL WORDS · 學員親手寫</p>
-                <h2 class="serif text-3xl md:text-5xl font-black text-ink mb-4">他們說 · 加入後改變了什麼</h2>
-                <p class="text-mocha">真實心得實照 · 滑鼠停在上面會暫停讓你慢慢看</p>
+    <!-- 學員現況 -->
+    <section class="py-24 md:py-28 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-14 fade-up">
+                <p class="text-xs tracking-[0.4em] text-gold mb-4">REAL RESULTS · 學員現況</p>
+                <h2 class="serif text-3xl md:text-5xl font-black text-ink">他們現在 · 長成什麼樣子</h2>
+                <p class="text-sm md:text-base text-mocha mt-5 max-w-xl mx-auto">
+                    這些帳號都是從頭開始的 ~ <br class="md:hidden">
+                    數字是<span class="text-ink font-bold">他們自己一篇一篇跑出來的</span>
+                </p>
             </div>
-        </div>
 
-        <!-- 第一條跑馬燈（左→右）-->
-        <div class="marquee-container marquee-fade">
-            <div class="marquee-track">
-                <a class="marquee-card" href="#"><img src="images/testimonial_1.png" alt="學員心得 1" loading="lazy"></a>
-                <a class="marquee-card" href="#"><img src="images/testimonial_2.png" alt="學員心得 2" loading="lazy"></a>
-                <a class="marquee-card" href="#"><img src="images/testimonial_3.png" alt="學員心得 3" loading="lazy"></a>
-                <a class="marquee-card" href="#"><img src="images/testimonial_4.png" alt="學員心得 4" loading="lazy"></a>
-                <a class="marquee-card" href="#"><img src="images/testimonial_5.png" alt="學員心得 5" loading="lazy"></a>
-                <a class="marquee-card" href="#"><img src="images/testimonial_6.png" alt="學員心得 6" loading="lazy"></a>
-                <!-- 複製一輪做無限滾動 -->
-                <a class="marquee-card" href="#"><img src="images/testimonial_1.png" alt="學員心得 1" loading="lazy"></a>
-                <a class="marquee-card" href="#"><img src="images/testimonial_2.png" alt="學員心得 2" loading="lazy"></a>
-                <a class="marquee-card" href="#"><img src="images/testimonial_3.png" alt="學員心得 3" loading="lazy"></a>
-                <a class="marquee-card" href="#"><img src="images/testimonial_4.png" alt="學員心得 4" loading="lazy"></a>
-                <a class="marquee-card" href="#"><img src="images/testimonial_5.png" alt="學員心得 5" loading="lazy"></a>
-                <a class="marquee-card" href="#"><img src="images/testimonial_6.png" alt="學員心得 6" loading="lazy"></a>
+            <!-- 毛孩賽道 -->
+            <div class="mb-12 fade-up">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="text-xs tracking-[0.25em] text-gold font-bold">毛孩賽道</span>
+                    <span class="flex-1 h-px bg-ink/10"></span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-ivory border border-ink/8 rounded-2xl p-5 card-hover">
+                        <div class="shot mb-4"><img src="images/creators/dogteach.png" alt="狗狗教會我們的事" loading="lazy"></div>
+                        <div class="serif text-2xl font-black text-ink">3.3<span class="text-base ml-0.5">萬</span></div>
+                        <div class="font-bold text-ink text-sm mt-2">狗狗教會我們的事</div>
+                        <div class="text-mocha text-xs mt-1 leading-relaxed">16 年汪星人陪伴經驗　新手爸媽指南</div>
+                    </div>
+                    <div class="bg-ivory border border-ink/8 rounded-2xl p-5 card-hover">
+                        <div class="shot mb-4"><img src="images/creators/niandidi.png" alt="小公橘黏黏｜貓咪日常研究室" loading="lazy"></div>
+                        <div class="serif text-2xl font-black text-ink">1.9<span class="text-base ml-0.5">萬</span></div>
+                        <div class="font-bold text-ink text-sm mt-2">小公橘黏黏｜貓咪日常研究室</div>
+                        <div class="text-mocha text-xs mt-1 leading-relaxed">@nian.didi　日常飲食 × 每週開團</div>
+                    </div>
+                    <div class="bg-ivory border border-ink/8 rounded-2xl p-5 card-hover">
+                        <div class="shot mb-4"><img src="images/creators/fayjing.png" alt="阿肥媽｜新手飼主指南" loading="lazy"></div>
+                        <div class="serif text-2xl font-black text-ink">1.5<span class="text-base ml-0.5">萬</span></div>
+                        <div class="font-bold text-ink text-sm mt-2">阿肥媽｜新手飼主指南</div>
+                        <div class="text-mocha text-xs mt-1 leading-relaxed">@fayjing_10　15 年養狗經驗　狗糧開團中</div>
+                    </div>
+                    <div class="bg-ivory border border-ink/8 rounded-2xl p-5 card-hover">
+                        <div class="shot mb-4"><img src="images/creators/luna.png" alt="毛太多女孩－嚕娜寶" loading="lazy"></div>
+                        <div class="serif text-2xl font-black text-ink">1.2<span class="text-base ml-0.5">萬</span></div>
+                        <div class="font-bold text-ink text-sm mt-2">毛太多女孩－嚕娜寶</div>
+                        <div class="text-mocha text-xs mt-1 leading-relaxed">@luna04110804　狗狗行為 × 隱形警訊解析</div>
+                    </div>
+                    <div class="bg-ivory border border-ink/8 rounded-2xl p-5 card-hover">
+                        <div class="shot mb-4"><img src="images/creators/ninidibow.png" alt="妮妮＆弟寶｜貓奴小學堂" loading="lazy"></div>
+                        <div class="serif text-2xl font-black text-ink">1.2<span class="text-base ml-0.5">萬</span></div>
+                        <div class="font-bold text-ink text-sm mt-2">妮妮＆弟寶｜貓奴小學堂</div>
+                        <div class="text-mocha text-xs mt-1 leading-relaxed">@ninidibowcat_66　貓咪行為 × 貓咪照護</div>
+                    </div>
+                    <div class="bg-ivory border border-ink/8 rounded-2xl p-5 card-hover">
+                        <div class="shot mb-4"><img src="images/creators/minuetcat.png" alt="貓咪健康偵探 di 爸" loading="lazy"></div>
+                        <div class="serif text-2xl font-black text-ink">8,870</div>
+                        <div class="font-bold text-ink text-sm mt-2">貓咪健康偵探 di 爸</div>
+                        <div class="text-mocha text-xs mt-1 leading-relaxed">@minuetcat_daily　15 年養貓經驗　好物開團 ING</div>
+                    </div>
+                    <div class="bg-ivory border border-ink/8 rounded-2xl p-5 card-hover">
+                        <div class="shot mb-4"><img src="images/creators/ucatip.png" alt="BO 氏家族｜狗狗帶大的貓仔" loading="lazy"></div>
+                        <div class="serif text-2xl font-black text-ink">4,859</div>
+                        <div class="font-bold text-ink text-sm mt-2">BO 氏家族｜狗狗帶大的貓仔</div>
+                        <div class="text-mocha text-xs mt-1 leading-relaxed">@ucat.ip　16 年資深鏟屎官　寵物用品開團</div>
+                    </div>
+                </div>
             </div>
+
+            <!-- 親子賽道 -->
+            <div class="mb-12 fade-up">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="text-xs tracking-[0.25em] text-gold font-bold">親子賽道</span>
+                    <span class="flex-1 h-px bg-ink/10"></span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-ivory border border-ink/8 rounded-2xl p-5 card-hover">
+                        <div class="shot mb-4"><img src="images/creators/panpan.png" alt="潘潘老師｜育兒觀念" loading="lazy"></div>
+                        <div class="serif text-2xl font-black text-ink">3.9<span class="text-base ml-0.5">萬</span></div>
+                        <div class="font-bold text-ink text-sm mt-2">潘潘老師｜育兒觀念</div>
+                        <div class="text-mocha text-xs mt-1 leading-relaxed">@panpan_teacher　親子健康 × 幼兒知識 × 好物開團</div>
+                    </div>
+                    <div class="bg-ivory border border-ink/8 rounded-2xl p-5 card-hover">
+                        <div class="shot mb-4"><img src="images/creators/linlinmom.png" alt="林林媽｜青少年教養實戰" loading="lazy"></div>
+                        <div class="serif text-2xl font-black text-ink">2.3<span class="text-base ml-0.5">萬</span></div>
+                        <div class="font-bold text-ink text-sm mt-2">林林媽｜青少年教養實戰</div>
+                        <div class="text-mocha text-xs mt-1 leading-relaxed">@lin_lin_mom66　把叛逆期變成蜜月期</div>
+                    </div>
+                    <div class="bg-ivory border border-ink/8 rounded-2xl p-5 card-hover">
+                        <div class="shot mb-4"><img src="images/creators/sanbaomom.png" alt="三寶媽咪的天空" loading="lazy"></div>
+                        <div class="serif text-2xl font-black text-ink">1.9<span class="text-base ml-0.5">萬</span></div>
+                        <div class="font-bold text-ink text-sm mt-2">三寶媽咪的天空</div>
+                        <div class="text-mocha text-xs mt-1 leading-relaxed">16 年經驗三寶媽　11,000+ 親子社群版主</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 美業與健康賽道 -->
+            <div class="fade-up">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="text-xs tracking-[0.25em] text-gold font-bold">美業與大健康賽道</span>
+                    <span class="flex-1 h-px bg-ink/10"></span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="bg-ivory border border-ink/8 rounded-2xl p-5 card-hover">
+                        <div class="shot mb-4"><img src="images/creators/luknee.png" alt="盧先生陪你顧膝蓋" loading="lazy"></div>
+                        <div class="serif text-2xl font-black text-ink">13<span class="text-base ml-0.5">萬</span></div>
+                        <div class="font-bold text-ink text-sm mt-2">盧先生陪你顧膝蓋</div>
+                        <div class="text-mocha text-xs mt-1 leading-relaxed">每天一個膝蓋保養小知識</div>
+                    </div>
+                    <div class="bg-ivory border border-ink/8 rounded-2xl p-5 card-hover">
+                        <div class="shot mb-4"><img src="images/creators/huahua.png" alt="大家叫我華華老師" loading="lazy"></div>
+                        <div class="serif text-2xl font-black text-ink">7.6<span class="text-base ml-0.5">萬</span></div>
+                        <div class="font-bold text-ink text-sm mt-2">大家叫我華華老師</div>
+                        <div class="text-mocha text-xs mt-1 leading-relaxed">@hhh_hua　變美養生還能活久一點</div>
+                    </div>
+                    <div class="bg-ivory border border-ink/8 rounded-2xl p-5 card-hover">
+                        <div class="shot mb-4"><img src="images/creators/xiaolazhao.png" alt="小辣昭 陪妳一起變美" loading="lazy"></div>
+                        <div class="serif text-2xl font-black text-ink">7.5<span class="text-base ml-0.5">萬</span></div>
+                        <div class="font-bold text-ink text-sm mt-2">小辣昭 陪妳一起變美</div>
+                        <div class="text-mocha text-xs mt-1 leading-relaxed">@ohana_natasha　只分享經得起時間考驗的好物</div>
+                    </div>
+                    <div class="bg-ivory border border-ink/8 rounded-2xl p-5 card-hover">
+                        <div class="shot mb-4"><img src="images/creators/meijie.png" alt="八里雞婆媚姐" loading="lazy"></div>
+                        <div class="serif text-2xl font-black text-ink">5.4<span class="text-base ml-0.5">萬</span></div>
+                        <div class="font-bold text-ink text-sm mt-2">八里雞婆媚姐</div>
+                        <div class="text-mocha text-xs mt-1 leading-relaxed">50++ 逆齡雞婆教練　乙級健康管理師</div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center text-sm text-mocha/70 mt-12 fade-up">
+                以上為部分學員現況 ~ 數據更新於 2026 年 7 月
+            </p>
         </div>
     </section>
 
@@ -472,7 +674,11 @@
         <div class="container mx-auto max-w-4xl">
             <div class="text-center mb-16 fade-up">
                 <p class="text-xs tracking-[0.4em] text-gold mb-4">HOW IT WORKS · 第一 ~ 第四週</p>
-                <h2 class="serif text-3xl md:text-5xl font-black text-ink">從這裡 · 開始你的收入</h2>
+                <h2 class="serif text-3xl md:text-5xl font-black text-ink">第一場團 · 我們陪你跑完</h2>
+                <p class="text-sm md:text-base text-mocha mt-5 max-w-xl mx-auto">
+                    流程我們都準備好了 ~ <br class="md:hidden">
+                    真正決定成敗的　是<span class="text-ink font-bold">你願不願意跑</span>
+                </p>
             </div>
             <div class="space-y-6">
                 <div class="flex gap-6 items-start fade-up">
@@ -491,20 +697,27 @@
                 </div>
             </div>
 
-            <!-- 我們不... -->
-            <div class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4 fade-up">
-                <div class="text-center bg-cream border border-ink/8 rounded-2xl py-6 px-4">
-                    <div class="text-gold text-2xl mb-2"><i class="fas fa-circle-xmark"></i></div>
-                    <div class="font-bold text-ink">不看粉絲數</div>
+            <!-- 篩選：這裡不適合三種人 -->
+            <div class="mt-16 fade-up">
+                <p class="text-center serif text-xl md:text-2xl font-bold text-ink mb-8">先說清楚 ~ 這裡不適合三種人</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="text-center bg-cream border border-ink/8 rounded-2xl py-7 px-4">
+                        <div class="text-[#c44a3a]/70 text-2xl mb-3"><i class="fas fa-circle-xmark"></i></div>
+                        <div class="font-bold text-ink">只是想來看看的</div>
+                    </div>
+                    <div class="text-center bg-cream border border-ink/8 rounded-2xl py-7 px-4">
+                        <div class="text-[#c44a3a]/70 text-2xl mb-3"><i class="fas fa-circle-xmark"></i></div>
+                        <div class="font-bold text-ink">不願意讓人認識自家孩子的</div>
+                    </div>
+                    <div class="text-center bg-cream border border-ink/8 rounded-2xl py-7 px-4">
+                        <div class="text-[#c44a3a]/70 text-2xl mb-3"><i class="fas fa-circle-xmark"></i></div>
+                        <div class="font-bold text-ink">上完課不動手的</div>
+                    </div>
                 </div>
-                <div class="text-center bg-cream border border-ink/8 rounded-2xl py-6 px-4">
-                    <div class="text-gold text-2xl mb-2"><i class="fas fa-circle-xmark"></i></div>
-                    <div class="font-bold text-ink">不收會費</div>
-                </div>
-                <div class="text-center bg-cream border border-ink/8 rounded-2xl py-6 px-4">
-                    <div class="text-gold text-2xl mb-2"><i class="fas fa-circle-xmark"></i></div>
-                    <div class="font-bold text-ink">不囤貨</div>
-                </div>
+                <p class="text-center text-sm md:text-base text-mocha mt-8 leading-relaxed">
+                    我們不看粉絲數　不收會費　不用囤貨 ~ <br class="md:hidden">
+                    <span class="text-ink font-bold">但我們看你做不做</span>
+                </p>
             </div>
         </div>
     </section>
